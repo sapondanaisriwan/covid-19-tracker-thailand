@@ -51,8 +51,10 @@ export default function CaseVaccineDashboard() {
           <h1 className="text-gray-900 text-center text-3xl leading-8 font-semibold mb-2">
             รายงานซีนข้อมูลการฉีดวัคซีน
           </h1>
-          <h4 className="text-gray-900 text-center text-2xl leading-7 font-medium">
-            อัพเดตข้อมูล ณ {getVaccineData.getDate()}
+          <h4 className="flex items-center gap-1 justify-center text-gray-900 text-center text-2xl leading-7 font-medium">
+            <span className="flex items-center">
+              <box-icon name='calendar'></box-icon>
+            </span>อัพเดตข้อมูล ณ {getVaccineData.getDate()}
           </h4>
         </div>
         <div className="grid md:grid-cols-4 gap-3 mb-20">

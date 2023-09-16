@@ -20,7 +20,8 @@ export default function CaseDashBoard() {
         <div className="p-4 mt-12 mb-6">
           <h1 className="text-white text-center text-3xl leading-8 font-semibold mb-2">
             ยืนยันตัวเลขผู้ติดเชื้อ{" "}
-            <span className="text-[#EA5771]">Covid-19</span> ทั้งหมดในประเทศไทย
+            <span className="text-[#EA5771]">
+              Covid-19</span> ทั้งหมดในประเทศไทย
           </h1>
           <h4 className="text-white text-center text-2xl leading-7 font-medium">
             อัพเดตข้อมูล ณ {updateDate}
