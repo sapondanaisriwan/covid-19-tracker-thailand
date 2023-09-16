@@ -89,7 +89,7 @@ export default function CaseVaccineDashboard() {
           </div>
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
-              <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 2</h4>
+              <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 3</h4>
               <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getThirdDoes()[0]}
               </h3>
@@ -104,7 +104,7 @@ export default function CaseVaccineDashboard() {
           </div>
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
-              <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 2</h4>
+              <h4 className="text-lg text-gray-900 leading-6 font-semibold">ทั้งหมด</h4>
               <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getTotalDoes()[0]}
               </h3>
