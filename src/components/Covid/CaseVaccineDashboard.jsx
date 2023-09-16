@@ -59,14 +59,15 @@ export default function CaseVaccineDashboard() {
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
               <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 1</h4>
-              <h3 className="text-3xl text-gray-900 leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getFirstDoes()[0]}
               </h3>
             </div>
             <hr />
             <div className="p-2">
-              <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl text-gray-900  leading-8 font-normal">
+              <h4 className="text-lg text-gray-900  leading-6 font-medium">
+                เพิ่ม</h4>
+              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
                 {getVaccineData.getFirstDoes()[1]}
               </h3>
             </div>
@@ -74,14 +75,14 @@ export default function CaseVaccineDashboard() {
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
               <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 2</h4>
-              <h3 className="text-3xl text-gray-900 leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getSecondDose()[0]}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
                 {getVaccineData.getSecondDose()[1]}
               </h3>
             </div>
@@ -89,14 +90,14 @@ export default function CaseVaccineDashboard() {
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
               <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 2</h4>
-              <h3 className="text-3xl text-gray-900 leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getThirdDoes()[0]}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
                 {getVaccineData.getThirdDoes()[1]}
               </h3>
             </div>
@@ -104,14 +105,14 @@ export default function CaseVaccineDashboard() {
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
               <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 2</h4>
-              <h3 className="text-3xl text-gray-900 leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal">
                 {getVaccineData.getTotalDoes()[0]}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
                 {getVaccineData.getTotalDoes()[1]}
               </h3>
             </div>

@@ -32,14 +32,14 @@ export default function CaseDashBoard() {
               <h4 className="text-lg leading-6 font-semibold">
                 ผู้ติดเชื้อรายใหม่สะสม
               </h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.total_case_excludeabroad}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.new_case_excludeabroad}
               </h3>
             </div>
@@ -49,14 +49,14 @@ export default function CaseDashBoard() {
               <h4 className="text-lg leading-6 font-semibold">
                 ผู้ป่วยรักษาหายสะสม
               </h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.total_recovered}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.new_recovered}
               </h3>
             </div>
@@ -66,14 +66,14 @@ export default function CaseDashBoard() {
               <h4 className="text-lg leading-6 font-semibold">
                 ผู้เสียชีวิตสะสม
               </h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.total_death}
               </h3>
             </div>
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-3xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal">
                 {cards.new_death}
               </h3>
             </div>
