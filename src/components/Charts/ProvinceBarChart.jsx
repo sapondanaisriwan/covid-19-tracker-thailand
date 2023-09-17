@@ -48,7 +48,7 @@ const ProvinceBarChart = ({ selectedCase }) => {
       // หัวข้อ
       title: {
         display: true,
-        text: 'กราฟแสดงยอดผู้ติดเชื้อสะสมแต่ละจังหวัด',
+        text: 'กราฟแสดงสถานะแต่ละจังหวัด',
         font: {
           size: 16,
           family: "Kanit",

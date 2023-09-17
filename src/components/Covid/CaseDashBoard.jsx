@@ -1,8 +1,17 @@
 import useFetch from "../hooks/useFetch";
 import { url_today_cases_all } from "../../api/covid_urls";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 export default function CaseDashBoard() {
   const [data] = useFetch(url_today_cases_all);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const formatNumber = (key) => (data ? data[0][key].toLocaleString() : 0);
   const updateDate = data ? data[0]?.update_date.split(" ")[0] : "วันนี้"
   const cards = {
@@ -16,7 +25,7 @@ export default function CaseDashBoard() {
 
   return (
     <div className="bg-[#353538]">
-      <div className="max-w-5xl mx-auto w-full p-4 pt-[60px]">
+      <div className="max-w-5xl mx-auto w-full p-4 pt-[60px]" data-aos="fade-right">
         <div className="p-4 mt-12 mb-6">
           <h1 className="text-white text-center text-3xl leading-8 font-semibold mb-2">
             ยืนยันตัวเลขผู้ติดเชื้อ{" "}

@@ -12,7 +12,7 @@ const GraphProvinceCaseSelect = () => {
 
   return (
     <div className="bg-white">
-      <div className="max-w-5xl mx-auto w-full p-4 pt-[60px]">
+      <div className="max-w-5xl mx-auto w-full p-4 pt-[60px]" data-aos="fade-left">
         <ProvinceCaseSelect onSelectedCase={handleSelected} />
         <ProvinceBarChart selectedCase={selectedCase} />
       </div>

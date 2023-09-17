@@ -1,8 +1,15 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { url_national_vaccination } from "../../api/covid_urls";
 import useFetch from "../hooks/useFetch";
+import { useEffect } from 'react';
 
 export default function CaseVaccineDashboard() {
   const [data] = useFetch(url_national_vaccination);
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const getVaccineData = {
     data: data ? data.slice(-2) : null,
@@ -46,7 +53,7 @@ export default function CaseVaccineDashboard() {
 
   return (
     <div className="bg-gray-100">
-      <div className="max-w-5xl mx-auto w-full p-4">
+      <div className="max-w-5xl mx-auto w-full p-4" data-aos="fade-right">
         <div className="p-4 mt-12 mb-6">
           <h1 className="text-gray-900 text-center text-3xl leading-8 font-semibold mb-2">
             รายงานซีนข้อมูลการฉีดวัคซีน

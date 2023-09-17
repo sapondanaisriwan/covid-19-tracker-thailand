@@ -10,7 +10,7 @@ const ProvinceCaseSelect = ({ onSelectedCase }) => {
   return (
     <div>
       <label>
-        เลือกข้อมูล
+        📄 เลือกข้อมูล
         <select name="selectedProvince" onChange={selectedCase}>
           {provinceTypes.map(item => <option key={item.id} value={item.type_case} >{item.text}</option>
           )}
