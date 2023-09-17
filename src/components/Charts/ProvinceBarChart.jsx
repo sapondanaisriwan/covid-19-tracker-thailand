@@ -19,6 +19,7 @@ const ProvinceBarChart = ({ selectedCase }) => {
   const filterData = rawData[0].filter(province => province.province !== "ทั้งประเทศ" && province.province !== "ไม่ระบุ")//datas[0].sort((a, b) => b?.total_case - a?.total_case).slice(1, 10)
 
   const datasets = {
+    title: selectedCase === "total_case" ? "กราฟแสดงยอดผู้ติดเชื้อสะสม" : "กราฟแสดงยอดผู้เสียชีวิตสะสม",
     label: selectedCase === "total_case" ? "ผู้ติดเชื้อสะสม" : "ผู้เสียชีวิตสะสม",
     bgColor: selectedCase === "total_case" ? "rgba(240, 187, 0, 0.2)" : "rgba(210, 45, 54, 0.2)",
     bColor: selectedCase === "total_case" ? "rgb(240, 187, 0)" : "rgb(210, 45, 54)"
@@ -48,7 +49,7 @@ const ProvinceBarChart = ({ selectedCase }) => {
       // หัวข้อ
       title: {
         display: true,
-        text: 'กราฟแสดงสถานะแต่ละจังหวัด',
+        text: [datasets.title, "แต่ละจังหวัดในประเทศไทย"],
         font: {
           size: 16,
           family: "Kanit",

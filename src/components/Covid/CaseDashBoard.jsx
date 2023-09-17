@@ -1,15 +1,20 @@
-import useFetch from "../hooks/useFetch";
 import { url_today_cases_all } from "../../api/covid_urls";
+import { useEffect } from "react";
+import useFetch from "../hooks/useFetch";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+
+
+import { FcPlus, FcCalendar } from "react-icons/fc";
 
 export default function CaseDashBoard() {
   const [data] = useFetch(url_today_cases_all);
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000
+    });
   }, [])
 
   const formatNumber = (key) => (data ? data[0][key].toLocaleString() : 0);
@@ -32,7 +37,8 @@ export default function CaseDashBoard() {
             <span className="text-[#EA5771]">
               Covid-19</span> ทั้งหมดในประเทศไทย
           </h1>
-          <h4 className="text-white text-center text-2xl leading-7 font-medium">
+          <h4 className="flex justify-center items-center gap-1 text-white text-center text-2xl leading-7 font-medium">
+            <FcCalendar />
             อัพเดตข้อมูล ณ {updateDate}
           </h4>
         </div>
@@ -49,7 +55,8 @@ export default function CaseDashBoard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {cards.new_case_excludeabroad}
               </h3>
             </div>
@@ -66,7 +73,8 @@ export default function CaseDashBoard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {cards.new_recovered}
               </h3>
             </div>
@@ -83,7 +91,8 @@ export default function CaseDashBoard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl leading-8 font-normal">
+              <h3 className="text-2xl leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {cards.new_death}
               </h3>
             </div>

@@ -1,6 +1,8 @@
 import PropTypes from "prop-types"
 import { provinceTypes } from "../../data/select_types"
 
+import { FcBarChart } from "react-icons/fc";
+
 const ProvinceCaseSelect = ({ onSelectedCase }) => {
 
   const selectedCase = (e) => {
@@ -9,8 +11,8 @@ const ProvinceCaseSelect = ({ onSelectedCase }) => {
 
   return (
     <div>
-      <label>
-        📄 เลือกข้อมูล
+      <label className="flex items-center gap-1">
+        <FcBarChart /> เลือกข้อมูล
         <select name="selectedProvince" onChange={selectedCase}>
           {provinceTypes.map(item => <option key={item.id} value={item.type_case} >{item.text}</option>
           )}

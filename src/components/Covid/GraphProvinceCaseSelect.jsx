@@ -1,10 +1,20 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ProvinceBarChart from "../Charts/ProvinceBarChart"
 import ProvinceCaseSelect from "../Select/ProvinceCaseSelect"
+
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const GraphProvinceCaseSelect = () => {
 
   const [selectedCase, setSelectedCase] = useState("total_case");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    });
+  }, [])
 
   const handleSelected = (type_case) => {
     setSelectedCase(type_case);

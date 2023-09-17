@@ -6,3 +6,5 @@ export const url_national_vaccination =
 
 export const url_today_cases_by_provinces =
   "https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces";
+
+export const vaccine_manufacturer_timeseries = "https://raw.githubusercontent.com/wiki/porames/the-researcher-covid-data/vaccination/vaccine-manufacturer-timeseries.json"

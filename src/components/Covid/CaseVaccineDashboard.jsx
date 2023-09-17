@@ -4,11 +4,15 @@ import { url_national_vaccination } from "../../api/covid_urls";
 import useFetch from "../hooks/useFetch";
 import { useEffect } from 'react';
 
+import { FcPlus, FcCalendar } from "react-icons/fc";
+
 export default function CaseVaccineDashboard() {
   const [data] = useFetch(url_national_vaccination);
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000
+    });
   }, [])
 
   const getVaccineData = {
@@ -59,9 +63,8 @@ export default function CaseVaccineDashboard() {
             รายงานซีนข้อมูลการฉีดวัคซีน
           </h1>
           <h4 className="flex items-center gap-1 justify-center text-gray-900 text-center text-2xl leading-7 font-medium">
-            <span className="flex items-center">
-              <box-icon name='calendar'></box-icon>
-            </span>อัพเดตข้อมูล ณ {getVaccineData.getDate()}
+            <FcCalendar />
+            อัพเดตข้อมูล ณ {getVaccineData.getDate()}
           </h4>
         </div>
         <div className="grid md:grid-cols-4 gap-3 mb-20">
@@ -76,7 +79,8 @@ export default function CaseVaccineDashboard() {
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-medium">
                 เพิ่ม</h4>
-              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {getVaccineData.getFirstDoes()[1]}
               </h3>
             </div>
@@ -91,7 +95,8 @@ export default function CaseVaccineDashboard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {getVaccineData.getSecondDose()[1]}
               </h3>
             </div>
@@ -106,7 +111,8 @@ export default function CaseVaccineDashboard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {getVaccineData.getThirdDoes()[1]}
               </h3>
             </div>
@@ -121,7 +127,8 @@ export default function CaseVaccineDashboard() {
             <hr />
             <div className="p-2">
               <h4 className="text-lg text-gray-900  leading-6 font-semibold">เพิ่ม</h4>
-              <h3 className="text-2xl text-gray-900  leading-8 font-normal">
+              <h3 className="text-2xl text-gray-900 leading-8 font-normal flex items-center gap-1">
+                <FcPlus />
                 {getVaccineData.getTotalDoes()[1]}
               </h3>
             </div>
