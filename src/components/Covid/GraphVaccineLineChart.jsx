@@ -15,7 +15,7 @@ const GraphVaccineLineChart = () => {
 
   return (
     <div className="bg-white">
-      <div className="max-w-5xl mx-auto w-full p-4 pt-[60px]" data-aos="fade-left">
+      <div className="max-w-5xl mx-auto w-full p-4 pt-4" data-aos="fade-left">
         <VaccineLineChart />
       </div>
     </div>)

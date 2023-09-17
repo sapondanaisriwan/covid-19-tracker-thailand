@@ -67,7 +67,7 @@ export default function CaseVaccineDashboard() {
             อัพเดตข้อมูล ณ {getVaccineData.getDate()}
           </h4>
         </div>
-        <div className="grid md:grid-cols-4 gap-3 mb-20">
+        <div className="grid md:grid-cols-4 gap-3 mb-4">
           <div className="bg-white text-white p-3 flex-auto rounded-xl shadow-md">
             <div className="p-2">
               <h4 className="text-lg text-gray-900 leading-6 font-semibold">เข็มที่ 1</h4>
